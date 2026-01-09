@@ -2,8 +2,6 @@ name: Build firmware
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'  # Запуск каждый день в 00:00 UTC
   push:
     tags:
       - '*'
